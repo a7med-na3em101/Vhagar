@@ -17,6 +17,7 @@
         font-family: Arial, sans-serif;
         background-color: #f8f9fa;
       }
+
       h1 {
         text-align: center;
         background-color: #6f42c1;
@@ -26,36 +27,45 @@
         border-radius: 0 0 15px 15px;
         font-size: 2.5rem;
       }
+
       .card {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         border-radius: 10px;
         overflow: hidden;
       }
+
       .card:hover {
         transform: scale(1.05);
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
       }
+
       .card-img-top {
         height: 180px;
         object-fit: cover;
       }
+
       .btn-primary {
         background-color: #6f42c1;
         border: none;
       }
+
       .btn-primary:hover {
         background-color: #5a3e9a;
       }
+
       section {
         padding: 60px 0;
       }
+
       .container {
         max-width: 1200px;
       }
+
       .more-products {
         text-align: center;
         margin-top: 40px;
       }
+
       .more-products button {
         background-color: #6f42c1;
         color: white;
@@ -66,11 +76,45 @@
         cursor: pointer;
         transition: background-color 0.3s ease;
       }
+
       .more-products button:hover {
         background-color: #5a3e9a;
       }
+
       .nn:hover {
         background-color: yellow;
+      }
+
+      .center-menu {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #6f42c1;
+        border-radius: 10px;
+        margin-bottom: 30px;
+      }
+
+      .center-menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+      }
+
+      .center-menu ul li {
+        display: inline;
+        margin: 0 20px;
+      }
+
+      .center-menu ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: bold;
+        transition: color 0.3s ease;
+      }
+
+      .center-menu ul li a:hover {
+        color: #ffc107;
       }
     </style>
   </head>
@@ -90,8 +134,17 @@
       >
       My Portfolio
     </h1>
-
-    <section class="p-5">
+    <header>
+      <nav class="center-menu">
+        <ul>
+          <li><a href="#web">Web</a></li>
+          <li><a href="#graphic">Graphic</a></li>
+          <li><a href="#video-editor">Video Editor</a></li>
+        </ul>
+      </nav>
+    </header>
+        <section id="web" class="p-5">
+     <section class="p-5">
       <div class="container">
         <div class="row">
           <div class="col-md-4">
@@ -271,14 +324,40 @@
         </div>
       </div>
     </section>
-    <div class="more-products">
-      <a
-        target="_blank"
-        href="https://drive.google.com/drive/folders/1U1fzyZ5EofGMArO74bydH8CHQ_9I42LV?usp=drive_link"
-      >
-        <button>More Products</button>
-      </a>
-    </div>
+    </section>
+
+    <section id="graphic" class="p-5" style="text-align: center;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+<div>
+  <h2 style="    text-align: center;
+"><a target="_blank" title="go to graphics " style="text-decoration: none; color: #ffc107; text-align: center;" href="https://docs.google.com/document/d/1nggU7-gLRXxubpayBCXiZ1lNqzBc93MsMl0c_-OByLQ/edit?usp=drive_link"><mark>Graphic_Design</mark></a></h2>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="video-editor" class="p-5" style="text-align: center;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row">
+<div>
+  <h2 style="    text-align: center;
+"><a target="_blank" title="go to graphics " style="text-decoration: none; color: #ffc107; text-align: center;" href="https://drive.google.com/drive/folders/1oynSND234h_Qt2ovMvEB_78l9-uKFEpN?usp=drive_link"><mark>Video_Editing</mark></a></h2>
+</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <a href="#top" class="go-top active" aria-label="Go To Top" data-go-top>
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+        <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
